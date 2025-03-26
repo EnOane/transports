@@ -1,5 +1,5 @@
-PROTO_DIR=./internal/proto
-OUT_DIR=./pkg
+PROTO_DIR=./internal/grpc/proto
+OUT_DIR=./pkg/grpc
 
 PROTOC_GEN_GO=$(shell which protoc-gen-go)
 
@@ -20,7 +20,6 @@ gen-tg:
 	       -I $(PROTO_DIR)/tg_client $(PROTO_DIR)/tg_client/*.proto
 
 clean:
-	rm -rf $(OUT_DIR)/dld
-	rm -rf $(OUT_DIR)/tg
+	rm -rf $(OUT_DIR)
 
 .PHONY: all generate clean
