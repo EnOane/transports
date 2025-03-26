@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package dld;
 
-option go_package = "pkg/dldpb";
+option go_package = "pkg/dld";
 
 service CliDownloadService {
   rpc DownloadVideoStream (DownloadVideoStreamRequest) returns (stream DownloadVideoStreamResponse);

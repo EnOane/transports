@@ -4,7 +4,7 @@
 // - protoc             v4.25.3
 // source: tg_client.proto
 
-package tgpb
+package tg
 
 import (
 	context "context"
