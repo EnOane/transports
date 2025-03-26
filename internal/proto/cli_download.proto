@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package dld;
+
+option go_package = "pkg/dldpb";
+
+service CliDownloadService {
+  rpc DownloadVideoStream (DownloadVideoStreamRequest) returns (stream DownloadVideoStreamResponse);
+}
+
+message DownloadVideoStreamRequest {
+  string url = 1;
+}
+
+message DownloadVideoStreamResponse {
+  oneof data {
+    string filename = 1;
+    bytes chunk = 2;
+  }
+}
