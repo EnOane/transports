@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/EnOane/transports/compare/v1.1.0...v1.2.0) (2025-03-27)
+
+
+### Features
+
+* new structure ([6743fec](https://github.com/EnOane/transports/commit/6743fecf92f528bd1bb60a23b2ea88b51d3210a4))
+
 # [1.1.0](https://github.com/EnOane/transports/compare/v1.0.1...v1.1.0) (2025-03-26)
 
 
