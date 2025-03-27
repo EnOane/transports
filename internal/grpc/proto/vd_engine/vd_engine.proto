@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package tg;
+package vd_engine;
 
-option go_package = "pkg/tg";
+option go_package = "pkg/vd_engine";
 
-service TgService {
+service VdEngineService {
   rpc DownloadVideoStream (DownloadVideoStreamRequest) returns (stream DownloadVideoStreamResponse);
 }
 
